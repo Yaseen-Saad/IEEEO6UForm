@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(./images.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body main {
+  display: flex;
+  margin: 100px auto;
+  max-height: 500px;
+  max-width: 1000px;
+}
+body main img {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 50%;
+}
+body main > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+body main > div > div:nth-child(1) {
+  position: relative;
+  margin-block: 10px -20px;
+  display: flex;
+  justify-content: space-around;
+}
+body main > div > div:nth-child(1) > p {
+  cursor: pointer;
+}
+body main > div > div:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 70%;
+  top: 15%;
+  left: 50%;
+  border-radius: 10px;
+  background-color: #5690FF;
+}
+body main > div > div:nth-child(2) {
+  height: 90%;
+}
+body main > div > div:nth-child(2) form {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 5%;
+}
+body main > div > div:nth-child(2) form:last-child {
+  display: none;
+}
+body main > div > div:nth-child(2) form input::-moz-placeholder {
+  height: 100%;
+}
+body main > div > div:nth-child(2) form input:-ms-input-placeholder {
+  height: 100%;
+}
+body main > div > div:nth-child(2) form input::placeholder {
+  height: 100%;
+}
+body main > div > div:nth-child(2) form input:not([type=radio]) {
+  width: 100%;
+  height: 50px;
+}
+body main > div > div:nth-child(2) form input:not([type=radio]):not([type=submit]) {
+  transition: 0.5s ease-in-out;
+  font-size: 100%;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-bottom-color: #5690FF;
+  border-bottom-style: solid;
+}
+body main > div > div:nth-child(2) form input:not([type=radio]):not([type=submit]):focus {
+  outline: 0;
+  border-bottom-color: #17244e;
+  border-bottom-style: solid;
+}
+body main > div > div:nth-child(2) form input[type=submit] {
+  background-color: #5690FF;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border-width: 0;
+  border-radius: 10px;
+}
+body main > div > div:nth-child(2) form input[type=submit]:hover {
+  background-color: #17244e;
+}
+body main > div > div:nth-child(2) form > :nth-child(4) label {
+  cursor: pointer;
+}
+body main > div > div:nth-child(2) form > :nth-child(4) > div,
+body main > div > div:nth-child(2) form > :nth-child(4) > div > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  justify-content: space-evenly;
+}
+body main > div > div:nth-child(2) form > :nth-child(4) > div span,
+body main > div > div:nth-child(2) form > :nth-child(4) > div > div span {
+  transition: 0.3s ease-in-out;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+body main > div > div:nth-child(2) form > :nth-child(4) > div span > span,
+body main > div > div:nth-child(2) form > :nth-child(4) > div > div span > span {
+  margin: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+body main > div > div:nth-child(2) form > :nth-child(4) > div > span,
+body main > div > div:nth-child(2) form > :nth-child(4) > div > div > span {
+  margin-right: 10px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: #5690FF;
+  border-style: solid;
+}
+body main > div > div:nth-child(2) form > :nth-child(4) > div input,
+body main > div > div:nth-child(2) form > :nth-child(4) > div > div input {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  cursor: pointer;
+  top: 0;
+  opacity: 0;
+}
+body main > div > div:nth-child(2) form > :nth-child(4) > div input:checked + span > span,
+body main > div > div:nth-child(2) form > :nth-child(4) > div > div input:checked + span > span {
+  background-color: #17244e;
+}/*# sourceMappingURL=style.css.map */
