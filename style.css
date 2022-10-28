@@ -14,6 +14,14 @@ body main {
   max-height: 500px;
   max-width: 1000px;
 }
+@media (max-width: 565px) {
+  body main {
+    flex-direction: column;
+  }
+  body main > * {
+    width: 100% !important;
+  }
+}
 body main img {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;

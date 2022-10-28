@@ -13,6 +13,12 @@ body{
         size:cover;
     }
     main{
+        @media(max-width: 565px) {
+            flex-direction: column;
+            >*{
+                width: 100% !important;
+            }
+        }
         display: flex;
         margin:100px auto;
         max-height: 500px;
